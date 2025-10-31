@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaWiseTI</title>
+
+    <!-- Link da fonte Motserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/FaviconRoxo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/Inovawise logo.png" alt="Logo InovaWise">
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="SobreNós.html">Sobre Nós</a></li>
+                <li><a href="SobreAurora/Sobre.html">Serviços</a></li>
+                <li><a href="ProjetosAurora/Projetos.html">Feedbacks</a></li>
+                <li id="suporte"><a href="">Suporte</a></li>
+            </ul>
+        </nav>
+
+        <div class="videoum">
+            <img src="img/MiniCapa1.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="sobrenos1">
+            <div class="fotoVR">
+                <img src="img/FotoVResq.jpg " alt="Imagem de uma pessoas usando uma Realidade Virtual">
+            </div>
+            <div class="sobretexto">
+                <h2>Sobre Nós</h2>
+                <p>A InovawiseTI é uma startup de tecnologia especializada em cybersecurity e automação, oferecendo soluções que vão desde datacenters até conectividade wireless. Nosso propósito é garantir que empresas de todos os portes e segmentos possam proteger, otimizar e automatizar suas operações sem comprometer a produtividade.</p>
+                <p>Acreditamos que inovação só é verdadeira quando é acessível, inclusiva e transformadora. Nossa cultura valoriza a diversidade, pois reconhecemos que as melhores soluções nascem da colaboração entre diferentes perspectivas e experiências.</p>
+                <p>Mantemos uma relação próxima, transparente e ética com cada cliente, entendendo suas particularidades para entregar resultados eficientes e sustentáveis. Mais do que fornecer tecnologia, construímos parcerias baseadas em confiança e evolução mútua.</p>
+                <a href="SobreNós.html" id="irParaNos">Conheça mais nossa história</a>
+            </div>
+        </div>
+
+        <div class="empresasprc">
+            <h2>Já confiam na gente</h2>
+            <p>Na InovaWiseTI, nosso objetivo é gerar resultados positivos em nossos clientes, otimizando operações, reduzindo custos e trazendo eficiência para cada etapa.</p> 
+            <p>Combinamos tecnologia avançada e conhecimento estratégico para oferecer soluções alinhadas às suas necessidades e ao mercado em constante mudança.</p>
+            <div class="carousel" aria-label="Carrossel de logos">
+                <button class="nav prev" aria-label="Anterior">‹</button>
+            
+                <ul class="track">
+                  <li class="slide">
+                    <img src="img/NikeLOGO.png" alt="Nike">
+                  </li>
+                  <li class="slide">
+                    <img src="img/olxLOGO.png" alt="Grupo OLX">
+                  </li>
+                  <li class="slide">
+                    <img src="img/BradescoLOGO.png" alt="Outra marca">
+                  </li>
+                </ul>
+            
+                <button class="nav next" aria-label="Próximo">›</button>
+              </div>
+        </div>
+
+        <script>
+            const carousel = document.querySelector('.carousel');
+            const track = carousel.querySelector('.track');
+            const slides = Array.from(track.children);
+            const prevBtn = carousel.querySelector('.prev');
+            const nextBtn = carousel.querySelector('.next');
+          
+            let index = 0;
+          
+            function update() {
+              track.style.transform = `translateX(-${index * 100}%)`;
+            }
+          
+            prevBtn.addEventListener('click', () => {
+              index = (index - 1 + slides.length) % slides.length; // circular
+              update();
+            });
+          
+            nextBtn.addEventListener('click', () => {
+              index = (index + 1) % slides.length; // circular
+              update();
+            });
+          
+            // teclado: setas esquerda/direita
+            carousel.addEventListener('keydown', (e) => {
+              if (e.key === 'ArrowLeft') prevBtn.click();
+              if (e.key === 'ArrowRight') nextBtn.click();
+            });
+            // permite focar o carrossel
+            carousel.tabIndex = 0;
+          </script>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+
+
+:root {
+  --LaranjaWise: #FF5104;
+  --RoxoWise: #875EF7;
+  --PretoWise: #010101;
+}
+
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-grid {
+  width: 80vw;
+  max-width: 1400px;
+
+  margin: 25px auto;
+}
+
+
+/*------------------ Início do Styles --------------------------*/
+
+header {
+  height: 1245px;
+  background-image: url(img/Fundo1HeaderCarrosel.png);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat";
+  height: 18vh;
+  /* border: 3px solid rgb(106, 0, 0); */
+
+
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.nav-list a:hover {
+  color: #dae0f7;
+
+  text-decoration-color: #dae0f7;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+div.videoum {
+  /* border: 3px solid rgb(161, 0, 0); */
+
+
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 80vh;
+}
+
+div.videoum img {
+  height: 400px;
+}
+
+#suporte a {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  /* espaço interno */
+  border-radius: 20px;
+}
+
+/* Fim do header */
+
+/* Main Start */
+
+.sobrenos1 {
+  display: flex;
+
+
+}
+
+.fotoVR {
+  /* border: 3px solid rgb(106, 0, 0); */
+}
+.fotoVR img{
+  height: 900px;
+}
+
+.sobretexto {
+  padding-top: 250px;
+  /* border: 3px solid rgb(106, 0, 0); */
+}
+
+.sobretexto h2 {
+  font-family: "Montserrat";
+  color: var(--RoxoWise);
+  margin-bottom: 15px;
+  font-size: 35px;
+  letter-spacing: 2px;
+
+}
+
+.sobretexto p {
+  font-family: "Montserrat";
+  color: #9B9B9B;
+  text-align: justify;
+  font-size: 24px;
+  margin-right: 40vh;
+  margin-bottom: 10px;
+
+}
+
+.sobretexto a {
+  display: inline-block;         /* faz o link se comportar como botão */
+  margin-top: 100px;
+  margin-left: 200px;
+
+  background-color: transparent; /* se quiser sem fundo */
+  color: var(--RoxoWise);                 /* cor do texto */
+  border: 2px solid var(--RoxoWise);      /* borda roxa */
+  border-radius: 25px;           /* deixa arredondado */
+  padding: 15px 300px;            /* aumenta o tamanho interno */ 
+
+  font-size: 20px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  text-decoration: none; /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */
+}
+
+.sobretexto a:hover {
+  background-color:#8054fa;
+  color: white;
+}
+
+.empresasprc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empresasprc h2 {
+  color: var(--RoxoWise);
+  font-family: "Montserrat";
+  font-size: 37px;
+
+  margin-bottom: 12px;
+}
+
+.empresasprc p {
+  color: #9b9b9b;
+  font-family: "Montserrat";
+  font-size: 22px;
+}
+
+.carousel {
+  position: relative;
+  width: min(100%, 900px);
+  height: 160px;
+  padding: 0 56px;               /* espaço para as setas */
+  border-radius: 9999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg,#ff6a00,#c74d76,#7a67ff);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12) inset;
+}
+
+/* faixa deslizante */
+.track {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .4s ease;
+}
+
+/* cada slide ocupa 100% da largura do carrossel */
+.slide {
+  min-width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* imagem/“logo” dentro do slide */
+.slide img {
+  max-height: 80px;
+  width: auto;
+  object-fit: cover;
+  /* se quiser só “círculo com fundo”, use um PNG dentro de um círculo:
+  background:#fff; padding:10px; */
+}
+
+/* setas */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,.25);
+  color: #fff;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background .2s ease, transform .1s ease;
+}
+
+.nav:hover { background: rgba(255,255,255,.4); }
+.nav:active { transform: translateY(-50%) scale(.98); }
+
+.prev { left: 12px; }
+.next { right: 12px; }
+
+/* acessibilidade no teclado */
+.nav:focus { outline: 2px solid #fff; outline-offset: 2px; }
