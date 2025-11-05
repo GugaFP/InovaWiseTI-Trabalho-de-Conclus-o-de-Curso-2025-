@@ -28,14 +28,14 @@
 /*------------------ Início do Styles --------------------------*/
 
 header {
-  height: 1245px;
+  height: 1229px;
   background-image: url(img/Fundo1HeaderCarrosel.png);
 }
 
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   font-family: "Montserrat";
   height: 18vh;
@@ -62,6 +62,7 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+  gap: 30px;
 }
 
 .nav-list li {
@@ -174,6 +175,10 @@ div.videoum img {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  margin-top: 140px;
+
+  /* border: 3px solid rgb(106, 0, 0);  */
 }
 
 .empresasprc h2 {
@@ -181,13 +186,17 @@ div.videoum img {
   font-family: "Montserrat";
   font-size: 37px;
 
-  margin-bottom: 12px;
+  margin-bottom: 26px;
+
 }
 
-.empresasprc p {
+.empresasprc p, span {
   color: #9b9b9b;
   font-family: "Montserrat";
   font-size: 22px;
+}
+.empresasprc span{
+  margin-bottom: 40px;
 }
 
 .carousel {
@@ -199,7 +208,7 @@ div.videoum img {
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg,#ff6a00,#c74d76,#7a67ff);
+  background: linear-gradient(90deg,#ff6a0090,#7a67ff90);
   box-shadow: 0 8px 24px rgba(0,0,0,.12) inset;
 }
 
@@ -233,13 +242,14 @@ div.videoum img {
 /* setas */
 .nav {
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   border: 0;
   width: 40px;
   height: 40px;
   border-radius: 9999px;
-  background: rgba(255,255,255,.25);
+  background: none;
+  font-weight: 800;
   color: #fff;
   font-size: 24px;
   line-height: 40px;
@@ -249,7 +259,6 @@ div.videoum img {
   transition: background .2s ease, transform .1s ease;
 }
 
-.nav:hover { background: rgba(255,255,255,.4); }
 .nav:active { transform: translateY(-50%) scale(.98); }
 
 .prev { left: 12px; }
@@ -257,3 +266,31 @@ div.videoum img {
 
 /* acessibilidade no teclado */
 .nav:focus { outline: 2px solid #fff; outline-offset: 2px; }
+
+.soleser{
+  border: 3px solid rgb(106, 0, 0); 
+
+  margin-top: 140px;
+  text-align: center;
+}
+
+.soleser h2{
+  color: var(--LaranjaWise);
+  font-family: "Montserrat";
+  font-size: 37px;
+}
+
+.linhasolum{
+  border: 3px solid rgb(106, 0, 0);
+
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Card 1,2 e 3 */
+.datacenter, .cloudcc, .vdi{
+  height: 400px;
+  border: 2px solid var(--LaranjaWise);
+}
