@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Montserrat";
-  src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+  src: url(fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 }
 
 
@@ -30,6 +34,7 @@
 header {
   height: 1229px;
   background-image: url(img/Fundo1HeaderCarrosel.png);
+  width: 100%;
 }
 
 
@@ -116,6 +121,7 @@ div.videoum img {
 
 .sobrenos1 {
   display: flex;
+  gap: 40px;
 
 
 }
@@ -129,14 +135,14 @@ div.videoum img {
 
 .sobretexto {
   padding-top: 250px;
-  /* border: 3px solid rgb(106, 0, 0); */
+  /*border: 3px solid rgb(106, 0, 0);*/
 }
 
 .sobretexto h2 {
   font-family: "Montserrat";
   color: var(--RoxoWise);
-  margin-bottom: 15px;
-  font-size: 35px;
+  margin-bottom: 10px;
+  font-size: 41px;
   letter-spacing: 2px;
 
 }
@@ -145,22 +151,22 @@ div.videoum img {
   font-family: "Montserrat";
   color: #9B9B9B;
   text-align: justify;
-  font-size: 24px;
-  margin-right: 40vh;
-  margin-bottom: 10px;
+  font-size: 23px;
+  margin-right: 20vh;
+  margin-bottom: 15px;
 
 }
 
 .sobretexto a {
   display: inline-block;         /* faz o link se comportar como botão */
-  margin-top: 100px;
-  margin-left: 200px;
+  margin-top: 80px;
+  margin-left: -70px;
 
   background-color: transparent; /* se quiser sem fundo */
   color: var(--RoxoWise);                 /* cor do texto */
   border: 2px solid var(--RoxoWise);      /* borda roxa */
   border-radius: 25px;           /* deixa arredondado */
-  padding: 15px 300px;            /* aumenta o tamanho interno */ 
+  padding: 17px 330px;            /* aumenta o tamanho interno */ 
 
   font-size: 20px;               /* aumenta a fonte */          
   font-family: "Montserrat";
@@ -179,8 +185,10 @@ div.videoum img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 
-  margin-top: 140px;
+  margin-top: 155px;
+  padding: 50px 50px;
 
   /* border: 3px solid rgb(106, 0, 0);  */
 }
@@ -198,9 +206,12 @@ div.videoum img {
   color: #9b9b9b;
   font-family: "Montserrat";
   font-size: 22px;
+
+  margin-bottom: 60px;
 }
 .empresasprc span{
-  margin-bottom: 40px;
+  margin-top: 12px;
+  margin-bottom: 60px;
 }
 
 .carousel {
@@ -301,7 +312,7 @@ div.videoum img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.70);
   font-family: "Monteserrat";
 
-  width: 450px;
+  width: 400px;
 } 
 .cloudcc, .netseg{ border: 3px solid var(--RoxoWise);} .datacenter, .vdi, .observalidade, .services {border: 3px solid var(--LaranjaWise);}
 
@@ -311,9 +322,11 @@ div.videoum img {
   align-items: center;
 
   padding: 35px;
-  gap: 22px; 
+  gap: 20px; 
   font-family: "Montserrat";
 }
+.services{height: 490px;}
+
 .datacenter img{ 
   height: 100px;
 }
@@ -325,6 +338,7 @@ div.videoum img {
 .services p {
   font-size: 18px;
   color: #9B9B9B;
+  margin-top: -45px;
 }
 
 .datacenter span, .vdi span, .observalidade span, .services span{
@@ -339,7 +353,7 @@ div.videoum img {
   color: var(--LaranjaWise);
 }
 
-.datacenter a, .vdi a, .observalidade a, .services a{
+.datacenter a, .vdi a, .observalidade a{
   display: inline-block;         /* faz o link se comportar como botão */
   background-color: var(--LaranjaWise);
   color: white;                 /* cor do texto */
@@ -348,6 +362,8 @@ div.videoum img {
   font-size: 18px;               /* aumenta a fonte */          
   font-family: "Montserrat";
   font-weight: 500;
+
+  margin-top: 7px;
 
   text-decoration: none;          /* tira o sublinhado */
   transition: 0.3s;              /* suaviza ao passar o mouse */
@@ -362,10 +378,25 @@ div.videoum img {
   font-family: "Montserrat";
   font-weight: 500;
 
+  margin-top: 7px;
+
   text-decoration: none;          /* tira o sublinhado */
   transition: 0.3s;              /* suaviza ao passar o mouse */
 
 }
+.services a{display: inline-block;         /* faz o link se comportar como botão */
+  background-color: var(--LaranjaWise);
+  color: white;                 /* cor do texto */
+  border-radius: 35px;           /* deixa arredondado */ 
+  padding: 15px;
+  font-size: 18px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  margin-top: 19px;
+
+  text-decoration: none;          /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */}
 
 .datacenter a:hover, .cloudcc a:hover, .vdi a:hover, .observalidade a:hover, .services a:hover{
   background-color: #e14300;
@@ -389,11 +420,11 @@ div.videoum img {
 
 .avaliar{
   border: 2px solid red; 
-  margin-top: 200px;
+  margin-top: 150px;
 
     /* tamanho da área */
     height: 1300px;           /* ajuste conforme precisar */
-    width: 100%;
+    width: 130%;
     
     background-image: url("img/FundoFeedbackLP.png");
     background-size: cover;  /*cobre toda a área sem distorcer */       
@@ -419,10 +450,50 @@ div.videoum img {
   border: 2px solid blue;
   width: 70%;
   padding: 40px 40px;
+
+  display: flex;
+  justify-content: space-evenly;
+
 }
-/*  */
-/* FALTA O CARROSSEL */
-/*  */
+.cardbackum, .cardbackdois, .cardbacktres{
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.764);
+    border: solid 0.5px black;
+    border-radius: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    padding: 20px 20px;
+
+    font-family: "Montserrat";
+    color: #7c7c7c;
+
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.688);
+
+    gap: 20px;
+    width: 250px;
+
+    transition: transform .5s ease;
+
+    margin-top: 590px;
+}
+.cardbackum:hover, .cardbackdois:hover, .cardbacktres:hover{
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .postsrecentes{
   /* border: 2px solid blue; */
@@ -559,23 +630,11 @@ div.videoum img {
 
 
 
-  .reference-box {
-    max-width: 1366px;
-    margin: 0 auto;
-    border: solid 3px #1c113b;
-    padding: 0 24px;
-    box-sizing: border-box;
-  }
-  
-  /* Só pra garantir um fundo legal por fora da moldura */
-  body {
-    background-color: #ffffff;
-  }  
 
 
   /* Notebook padrão (1366px+) */
-@media (min-width: 1366px) {
+/*@media (min-width: 1366px) {
   body {
-      /* seus ajustes para notebooks */
+       seus ajustes para notebooks 
   }
-}
+}*/
