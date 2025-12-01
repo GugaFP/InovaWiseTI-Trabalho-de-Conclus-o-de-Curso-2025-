@@ -486,7 +486,7 @@ div.videoum img {
 /* ------------------------------------------- */
 
 .postsrecentes{
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
 
   display: flex;
   margin-top: 50px;
