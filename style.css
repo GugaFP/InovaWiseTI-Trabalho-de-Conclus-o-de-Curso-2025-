@@ -32,7 +32,7 @@
 /*------------------ Início do Styles --------------------------*/
 
 header {
-  height: 1229px;
+  height: 1141px;
   background-image: url(img/Fundo1HeaderCarrosel.png);
   width: 100%;
 }
@@ -160,13 +160,13 @@ div.videoum img {
 .sobretexto a {
   display: inline-block;         /* faz o link se comportar como botão */
   margin-top: 80px;
-  margin-left: -70px;
+  margin-left: -100px;
 
   background-color: transparent; /* se quiser sem fundo */
   color: var(--RoxoWise);                 /* cor do texto */
   border: 2px solid var(--RoxoWise);      /* borda roxa */
   border-radius: 25px;           /* deixa arredondado */
-  padding: 17px 330px;            /* aumenta o tamanho interno */ 
+  padding: 17px 280px;            /* aumenta o tamanho interno */ 
 
   font-size: 20px;               /* aumenta a fonte */          
   font-family: "Montserrat";
@@ -419,12 +419,12 @@ div.videoum img {
 /* ------------------------------------------- */
 
 .avaliar{
-  border: 2px solid red; 
+  /* border: 2px solid red;  */
   margin-top: 150px;
 
     /* tamanho da área */
     height: 1300px;           /* ajuste conforme precisar */
-    width: 130%;
+    width: 100%;
     
     background-image: url("img/FundoFeedbackLP.png");
     background-size: cover;  /*cobre toda a área sem distorcer */       
@@ -436,7 +436,7 @@ div.videoum img {
 }
 
 .google{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 40%;
 }
 .google img{
@@ -447,7 +447,7 @@ div.videoum img {
 
 
 .comentarios{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 70%;
   padding: 40px 40px;
 
@@ -483,30 +483,22 @@ div.videoum img {
 .cardbackum:hover, .cardbackdois:hover, .cardbacktres:hover{
   transform: scale(1.02);
 }
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------------------------- */
 
 .postsrecentes{
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
 
   display: flex;
   margin-top: 50px;
-  height: 1100px;
+  height: 850px;
 
 }
 
 .roxoball{
   /* border: 2px solid GREEN; */
 }
+
+
 
 .poststext{
   display: flex;
@@ -521,7 +513,7 @@ div.videoum img {
 }
 
 .poststext h2{
-  margin-left: 30%;
+  margin-left: 10%;
 }
 
 
@@ -530,8 +522,8 @@ div.videoum img {
 
   height: 900px;
   margin-top: 85px;
-  margin-left: -70px;
-  padding: 0px 55px 0px 0px;
+  margin-left: -120px;
+  padding: 0px 30px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -542,14 +534,20 @@ div.videoum img {
   background-color: rgb(245, 245, 245);
   overflow: hidden;
 
-  height: 720px;
-  width: 475px;
+  height: 505px;
+  width: 300px;
 }
 
-.linha1P1, .linha1P2, .linha1p3{
+.linha1P1, .linha1P2{
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
+}
+.linha1p3{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+
 }
 
 .linha2P1, .linha2P2{
@@ -576,6 +574,8 @@ div.videoum img {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.688);
 
   transition: transform .5s ease;
+
+  height: 250px;
 }
 .linha2P1 img:hover, .linha2P2 img:hover, .linha2P3 img:hover{
   transform: scale(1.02);
@@ -615,22 +615,9 @@ div.videoum img {
   margin-left: 12%;
   background-image: url(img/FundoDivPosts.png);} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .linha3P1 img, .linha3P2 img, .linha3P3 img{
+    height: 50px;
+  }
 
   /* Notebook padrão (1366px+) */
 /*@media (min-width: 1366px) {
@@ -638,3 +625,121 @@ div.videoum img {
        seus ajustes para notebooks 
   }
 }*/
+
+/* Fonte base – use a que você já estiver usando no site */
+.footer {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+
+  /* Fundo usando a imagem */
+  background-image: url("img/FundoFooter.png"); /* ajusta o caminho se estiver em outra pasta */
+  background-repeat: no-repeat;
+  background-size: cover;          /* cobre toda a largura do footer */
+  background-position: center bottom; /* puxa o degradê pra baixo */
+}
+
+
+/* Parte de cima do footer */
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a,
+.footer-column li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Logo à direita */
+.footer-logo {
+  margin-left: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo .logo-text {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.footer-logo img{
+  height: 50px;
+}
+
+.footer-logo .logo-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Parte de baixo – direitos autorais */
+.footer-bottom {
+  text-align: center;
+  font-size: 10px;
+  padding: 10px 20px 18px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .footer-top {
+    gap: 30px;
+  }
+
+  .footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .footer-logo .logo-text {
+    font-size: 26px;
+  }
+}

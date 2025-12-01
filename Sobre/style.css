@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+}
+
+
+:root {
+  --LaranjaWise: #FF5104;
+  --RoxoWise: #875EF7;
+  --PretoWise: #010101;
+}
+
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-grid {
+  width: 80vw;
+  max-width: 1400px;
+
+  margin: 25px auto;
+}
+
+
+/*------------------ Início do Styles --------------------------*/
+
+header {
+  height: 1141px;
+  background-image: url(img/Fundo1HeaderCarrosel.png);
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat";
+  height: 18vh;
+  /* border: 3px solid rgb(106, 0, 0); */
+
+
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.nav-list a:hover {
+  color: #dae0f7;
+
+  text-decoration-color: #dae0f7;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+div.videoum {
+  /* border: 3px solid rgb(161, 0, 0); */
+
+
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 80vh;
+}
+
+div.videoum img {
+  height: 400px;
+}
+
+.videoum a{
+  display: inline-block;         /* faz o link se comportar como botão */
+}
+
+#suporte a {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  /* espaço interno */
+  border-radius: 20px;
+}
+
+/* Fim do header */
