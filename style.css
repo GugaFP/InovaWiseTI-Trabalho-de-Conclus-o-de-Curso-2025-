@@ -1,0 +1,745 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+}
+
+
+:root {
+  --LaranjaWise: #FF5104;
+  --RoxoWise: #875EF7;
+  --PretoWise: #010101;
+}
+
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-grid {
+  width: 80vw;
+  max-width: 1400px;
+
+  margin: 25px auto;
+}
+
+
+/*------------------ Início do Styles --------------------------*/
+
+header {
+  height: 1141px;
+  background-image: url(img/Fundo1HeaderCarrosel.png);
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat";
+  height: 18vh;
+  /* border: 3px solid rgb(106, 0, 0); */
+
+
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.nav-list a:hover {
+  color: #dae0f7;
+
+  text-decoration-color: #dae0f7;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+div.videoum {
+  /* border: 3px solid rgb(161, 0, 0); */
+
+
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 80vh;
+}
+
+div.videoum img {
+  height: 400px;
+}
+
+.videoum a{
+  display: inline-block;         /* faz o link se comportar como botão */
+}
+
+#suporte a {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  /* espaço interno */
+  border-radius: 20px;
+}
+
+/* Fim do header */
+
+/* Main Start */
+
+.sobrenos1 {
+  display: flex;
+  gap: 40px;
+
+
+}
+
+.fotoVR {
+  /* border: 3px solid rgb(106, 0, 0); */
+}
+.fotoVR img{
+  height: 900px;
+}
+
+.sobretexto {
+  padding-top: 250px;
+  /*border: 3px solid rgb(106, 0, 0);*/
+}
+
+.sobretexto h2 {
+  font-family: "Montserrat";
+  color: var(--RoxoWise);
+  margin-bottom: 10px;
+  font-size: 41px;
+  letter-spacing: 2px;
+
+}
+
+.sobretexto p {
+  font-family: "Montserrat";
+  color: #9B9B9B;
+  text-align: justify;
+  font-size: 23px;
+  margin-right: 20vh;
+  margin-bottom: 15px;
+
+}
+
+.sobretexto a {
+  display: inline-block;         /* faz o link se comportar como botão */
+  margin-top: 80px;
+  margin-left: -100px;
+
+  background-color: transparent; /* se quiser sem fundo */
+  color: var(--RoxoWise);                 /* cor do texto */
+  border: 2px solid var(--RoxoWise);      /* borda roxa */
+  border-radius: 25px;           /* deixa arredondado */
+  padding: 17px 280px;            /* aumenta o tamanho interno */ 
+
+  font-size: 20px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  text-decoration: none; /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */
+}
+
+.sobretexto a:hover {
+  background-color:#8054fa;
+  color: white;
+}
+
+.empresasprc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  margin-top: 155px;
+  padding: 50px 50px;
+
+  /* border: 3px solid rgb(106, 0, 0);  */
+}
+
+.empresasprc h2 {
+  color: var(--RoxoWise);
+  font-family: "Montserrat";
+  font-size: 37px;
+
+  margin-bottom: 26px;
+
+}
+
+.empresasprc p, span {
+  color: #9b9b9b;
+  font-family: "Montserrat";
+  font-size: 22px;
+
+  margin-bottom: 60px;
+}
+.empresasprc span{
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+.carousel {
+  position: relative;
+  width: min(100%, 900px);
+  height: 160px;
+  padding: 0 56px;               /* espaço para as setas */
+  border-radius: 9999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg,#ff6a0090,#7a67ff90);
+  a: 0 8px 24px rgba(0,0,0,.12) inset;
+}
+
+/* faixa deslizante */
+.track {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .4s ease;
+}
+
+/* cada slide ocupa 100% da largura do carrossel */
+.slide {
+  min-width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* imagem/“logo” dentro do slide */
+.slide img {
+  max-height: 80px;
+  width: auto;
+  object-fit: cover;
+  /* se quiser só “círculo com fundo”, use um PNG dentro de um círculo:
+  background:#fff; padding:10px; */
+}
+
+/* setas */
+.nav {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: none;
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background .2s ease, transform .1s ease;
+}
+
+.nav:active { transform: translateY(-50%) scale(.98); }
+
+.prev { left: 12px; }
+.next { right: 12px; }
+
+/* acessibilidade no teclado */
+.nav:focus { outline: 2px solid #fff; outline-offset: 2px; }
+
+.soleser{
+  /* border: 3px solid rgb(106, 0, 0);  */
+
+  margin-top: 140px;
+  text-align: center;
+}
+
+.soleser h2{
+  color: var(--LaranjaWise);
+  font-family: "Montserrat";
+  font-size: 37px;
+}
+
+.linhasolum{
+  /* border: 3px solid rgb(106, 0, 0); */
+
+  gap: 40px;
+  padding-right: 70px; padding-left: 70px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Card 1,2 e 3 (Cloud border roxo) */
+.datacenter, .cloudcc, .vdi, .observalidade, .netseg, .services{  
+  border-radius: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.70);
+  font-family: "Monteserrat";
+
+  width: 400px;
+} 
+.cloudcc, .netseg{ border: 3px solid var(--RoxoWise);} .datacenter, .vdi, .observalidade, .services {border: 3px solid var(--LaranjaWise);}
+
+.datacenter, .cloudcc, .vdi, .observalidade, .netseg, .services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 35px;
+  gap: 20px; 
+  font-family: "Montserrat";
+}
+.services{height: 490px;}
+
+.datacenter img{ 
+  height: 100px;
+}
+.datacenter p,
+.cloudcc p,
+.vdi p,
+.observalidade p,
+.netseg p,
+.services p {
+  font-size: 18px;
+  color: #9B9B9B;
+  margin-top: -45px;
+}
+
+.datacenter span, .vdi span, .observalidade span, .services span{
+  margin-top: 5px;
+  font-size: 30px;
+  color: var(--RoxoWise);
+}
+
+.cloudcc span, .netseg span{
+  margin-top: 5px;
+  font-size: 30px;
+  color: var(--LaranjaWise);
+}
+
+.datacenter a, .vdi a, .observalidade a{
+  display: inline-block;         /* faz o link se comportar como botão */
+  background-color: var(--LaranjaWise);
+  color: white;                 /* cor do texto */
+  border-radius: 35px;           /* deixa arredondado */ 
+  padding: 15px;
+  font-size: 18px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  margin-top: 7px;
+
+  text-decoration: none;          /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */
+}
+.cloudcc a, .netseg a{
+  display: inline-block;         /* faz o link se comportar como botão */
+  background-color: var(--RoxoWise);
+  color: white;                 /* cor do texto */
+  border-radius: 35px;           /* deixa arredondado */ 
+  padding: 15px;
+  font-size: 18px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  margin-top: 7px;
+
+  text-decoration: none;          /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */
+
+}
+.services a{display: inline-block;         /* faz o link se comportar como botão */
+  background-color: var(--LaranjaWise);
+  color: white;                 /* cor do texto */
+  border-radius: 35px;           /* deixa arredondado */ 
+  padding: 15px;
+  font-size: 18px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  margin-top: 19px;
+
+  text-decoration: none;          /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */}
+
+.datacenter a:hover, .cloudcc a:hover, .vdi a:hover, .observalidade a:hover, .services a:hover{
+  background-color: #e14300;
+}
+.cloudcc a:hover, .netseg a:hover{
+  background-color: #693ee0;
+}
+
+/* -------------------Copia a linha 1------------------------ */
+.linhasoldois{
+  /* border: 3px solid rgb(106, 0, 0); */
+
+  gap: 40px;
+  margin-left: 70px; margin-right: 70px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ------------------------------------------- */
+
+.avaliar{
+  /* border: 2px solid red;  */
+  margin-top: 150px;
+
+    /* tamanho da área */
+    height: 1300px;           /* ajuste conforme precisar */
+    width: 100%;
+    
+    background-image: url("img/FundoFeedbackLP.png");
+    background-size: cover;  /*cobre toda a área sem distorcer */       
+    /* para conteúdo por cima da imagem */
+    position: relative; 
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.google{
+  /* border: 2px solid green; */
+  width: 40%;
+}
+.google img{
+  
+  margin-top: 630px;
+  margin-left: 35%;
+}
+
+
+.comentarios{
+  /* border: 2px solid blue; */
+  width: 70%;
+  padding: 40px 40px;
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.cardbackum, .cardbackdois, .cardbacktres{
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.764);
+    border: solid 0.5px black;
+    border-radius: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    padding: 20px 20px;
+
+    font-family: "Montserrat";
+    color: #7c7c7c;
+
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.688);
+
+    gap: 20px;
+    width: 250px;
+
+    transition: transform .5s ease;
+
+    margin-top: 590px;
+}
+.cardbackum:hover, .cardbackdois:hover, .cardbacktres:hover{
+  transform: scale(1.02);
+}
+/* ------------------------------------------- */
+
+.postsrecentes{
+  border: 2px solid blue;
+
+  display: flex;
+  margin-top: 50px;
+  height: 850px;
+
+}
+
+.roxoball{
+  /* border: 2px solid GREEN; */
+}
+
+
+
+.poststext{
+  display: flex;
+  flex-direction: column; 
+
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: var(--RoxoWise);
+
+  height: 900px;
+  width: 100%;
+}
+
+.poststext h2{
+  margin-left: 10%;
+}
+
+
+.webposts{
+  /* border: 2px solid purple; */
+
+  height: 900px;
+  margin-top: 85px;
+  margin-left: -120px;
+  padding: 0px 30px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.postig1, .postig2, .postig3{
+  border: 5px solid black ; border-radius: 35px;
+
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+
+  height: 505px;
+  width: 300px;
+}
+
+.linha1P1, .linha1P2{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.linha1p3{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+
+}
+
+.linha2P1, .linha2P2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+/* Difrente no GAP */
+.linha2P3{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+
+}
+
+.linha2P1 img, .linha2P2 img, .linha2P3 img{
+  border-radius: 33px 33px 33px 33px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.688);
+
+  transition: transform .5s ease;
+
+  height: 250px;
+}
+.linha2P1 img:hover, .linha2P2 img:hover, .linha2P3 img:hover{
+  transform: scale(1.02);
+}
+
+
+.linha2P1 a, .linha2P2 a, .linha2P3 a {
+
+  display: inline-block;         /* faz o link se comportar como botão */
+  background-color: var(--LaranjaWise);
+  color: white;                 /* cor do texto */
+  border-radius: 35px;           /* deixa arredondado */ 
+  padding: 15px;
+  font-size: 18px;               /* aumenta a fonte */          
+  font-family: "Montserrat";
+  font-weight: 500;
+
+  text-decoration: none;          /* tira o sublinhado */
+  transition: 0.3s;              /* suaviza ao passar o mouse */
+  
+}
+.linha2P1 a:hover, .linha2P2 a:hover, .linha2P3 a:hover{
+  background-color: #e14300;
+}
+
+.linha3P1{
+  margin-top: 32px;
+} .linha3P2{ margin-top: 32px;
+} .linha3P3{ margin-top: 42px;}
+
+
+/* .fundoposts{ 
+  Códigos para foto de fundo
+  border: 2px solid blue;
+  height: 670px;
+  width: 1267px;
+  margin-left: 12%;
+  background-image: url(img/FundoDivPosts.png);} */
+
+  .linha3P1 img, .linha3P2 img, .linha3P3 img{
+    height: 50px;
+  }
+
+  /* Notebook padrão (1366px+) */
+/*@media (min-width: 1366px) {
+  body {
+       seus ajustes para notebooks 
+  }
+}*/
+
+/* Fonte base – use a que você já estiver usando no site */
+.footer {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+
+  /* Fundo usando a imagem */
+  background-image: url("img/FundoFooter.png"); /* ajusta o caminho se estiver em outra pasta */
+  background-repeat: no-repeat;
+  background-size: cover;          /* cobre toda a largura do footer */
+  background-position: center bottom; /* puxa o degradê pra baixo */
+}
+
+
+/* Parte de cima do footer */
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a,
+.footer-column li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Logo à direita */
+.footer-logo {
+  margin-left: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo .logo-text {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.footer-logo img{
+  height: 50px;
+}
+
+.footer-logo .logo-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Parte de baixo – direitos autorais */
+.footer-bottom {
+  text-align: center;
+  font-size: 10px;
+  padding: 10px 20px 18px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .footer-top {
+    gap: 30px;
+  }
+
+  .footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .footer-logo .logo-text {
+    font-size: 26px;
+  }
+}
